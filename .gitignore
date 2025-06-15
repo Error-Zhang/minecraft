@@ -1,0 +1,20 @@
+# 忽略构建输出
+build/
+dist/
+
+# 忽略临时文件
+*.tmp
+*.log
+*.bak
+
+# 忽略IDE配置文件
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 忽略操作系统文件
+Thumbs.db
+.DS_Store 
