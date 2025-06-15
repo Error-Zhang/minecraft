@@ -1,0 +1,19 @@
+@import "@/ui-root/styles/variables";
+
+.catalog-panel {
+  width: 60%;
+  aspect-ratio: 1.732;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.4em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: @color-bg-panel;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-content: start;
+  overflow-y: auto;
+}
