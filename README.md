@@ -3,6 +3,9 @@
 ## 项目简介
 本项目是一个 Minecraft 风格的游戏项目，包含基于 Babylon.js + React + Electron 的前端（含桌面端）和基于 .NET 10 的后端服务。前端负责游戏渲染、UI 和桌面端打包，后端负责游戏数据、实时通信和 API。
 
+## 视频介绍
+🎬 [bilibili视频介绍](https://www.bilibili.com/video/BV1g6MqzFExL/)
+
 ## 目录结构
 ```
 ├── minecraft-master/          # 前端项目
