@@ -1,0 +1,126 @@
+.world-manager {
+  width: 40%;
+  height: 90%;
+  margin: 2em auto;
+  padding: 0 1em;
+  background-color: #3b2f2f;
+  border: 4px solid #614f3f;
+  box-shadow: 0 0 10px #000;
+  color: #f0e6d2;
+  text-align: center;
+  position: relative;
+
+  .back-btn {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 2em;
+    height: 2em;
+    background-color: #a33;
+    border: none;
+    padding: 0.2em 0.5em;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #c44;
+    }
+  }
+
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .world-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    overflow-y: auto;
+    max-height: 76%;
+
+    .world-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #5c4a3e;
+      padding: 10px;
+      border: 2px solid #88755f;
+
+      .world-name {
+        text-align: left;
+        font-size: 0.8em;
+      }
+
+      .world-description {
+        font-size: 0.6em;
+        display: flex;
+        gap: 0.2em;
+      }
+
+      .btns {
+        display: flex;
+        gap: 0.5em;
+
+        .delete-btn {
+          width: 2em;
+          height: 2em;
+          background-color: #a33;
+          border: none;
+          padding: 0.2em 0.5em;
+          color: white;
+          cursor: pointer;
+          font-weight: bold;
+
+          &:hover {
+            background-color: #c44;
+          }
+        }
+
+        .edit-btn {
+          .delete-btn;
+          background-color: #2a4f7c;
+
+          &:hover {
+            background-color: #35659e;
+          }
+        }
+
+        .entry-btn {
+          .delete-btn;
+          background-color: #3a8c3a;
+
+          &:hover {
+            background-color: #4caf50;
+          }
+        }
+      }
+
+    }
+  }
+
+  .create-btn {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0.5em;
+    background-color: #3a8c3a;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.3em;
+
+    &:hover {
+      background-color: #4caf50;
+    }
+  }
+
+  .world-view-select {
+    font-size: 0.6em;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+  }
+}

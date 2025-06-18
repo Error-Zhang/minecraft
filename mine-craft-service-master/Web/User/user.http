@@ -1,0 +1,13 @@
+### 登录用户
+GET http://localhost:5110/api/user/?username=root&password=0326
+Accept: application/json
+
+### 创建用户
+# 期望结果：忽略id
+POST http://localhost:5110/api/user/
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "0326"
+}

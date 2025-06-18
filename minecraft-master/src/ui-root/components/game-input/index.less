@@ -1,0 +1,34 @@
+.game-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: #f0e6d2;
+
+  .game-input-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .game-input-field {
+    padding: 0.5em;
+    background: #5c4a3e;
+    border: 2px solid #88755f;
+    border-radius: 0.375em;
+    color: #f0e6d2;
+    font-size: 0.9em;
+
+    &:focus {
+      outline: none;
+      background: #665248;
+      border-color: #c99e66;
+    }
+
+    &:disabled {
+      background: #3a2e28;
+      color: #aaa;
+      border-color: #5b4a3d;
+      cursor: not-allowed;
+    }
+  }
+}

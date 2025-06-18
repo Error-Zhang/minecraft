@@ -1,0 +1,60 @@
+/* 世界表单面板样式 */
+.world-form-panel {
+  position: absolute;
+  left: 50%;
+  top: -2em;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  margin: 2em auto;
+  padding: 0 1.5em;
+  background-color: #3b2f2f;
+  border: 4px solid #614f3f;
+  box-shadow: 0 0 10px #000;
+  color: #f0e6d2;
+  text-align: center;
+  border-radius: 0.2em;
+
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+
+  .leave {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    height: 2em;
+    width: 2em;
+    background-color: #5c4a3e;
+  }
+
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    overflow-y: auto;
+    max-height: 70%;
+  }
+
+  .form-actions {
+    position: absolute;
+    bottom: 1em;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button {
+      &.submit {
+        background-color: #349e3c;
+        color: white;
+
+        &:hover {
+          background-color: #45b14c;
+        }
+      }
+    }
+  }
+}
+

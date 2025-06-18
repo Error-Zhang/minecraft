@@ -1,0 +1,77 @@
+.game-select-custom {
+  position: relative;
+  color: #f0e6d2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+
+  .game-select-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .game-select-box {
+    background: #5c4a3e;
+    border: 2px solid #88755f;
+    padding: 0.5em;
+    border-radius: 0.375em;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+
+  .game-select-options {
+    position: relative;
+    top: 100%;
+    right: 0;
+    background: #3b2f2f;
+    border: 2px solid #614f3f;
+    box-shadow: 0 0 5px #000;
+    border-radius: 0.375em;
+    list-style: none;
+    margin: 0.25em 0 0 0;
+    padding: 0;
+    z-index: 1000;
+    width: 100%;
+
+    .option {
+      padding: 0.5em;
+      cursor: pointer;
+      font-size: 0.9em;
+
+      &:hover {
+        background-color: #6d5140;
+      }
+
+      &.selected {
+        background-color: #826352;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.game-select-custom.disabled {
+  .game-select-box {
+    background: #3a2e28;
+    color: #aaa;
+    border-color: #5b4a3d;
+    cursor: not-allowed;
+  }
+
+  .option {
+    pointer-events: none;
+  }
+}
+
+.game-select-custom.flex {
+  width: fit-content;
+  flex-direction: row;
+  align-items: center;
+
+  .game-select-options {
+    position: absolute;
+    width: fit-content;
+  }
+}
